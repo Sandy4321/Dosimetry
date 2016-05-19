@@ -1,0 +1,16 @@
+Package: Dosimetry
+Title: Interactive Data Manage and Visualization of Badges and Medical Profiles.
+Version: 0.99.0
+Date: 2016-05-18
+Authors@R: person("Karim", "Mezhoud", role=c("aut", "cre"), email="kmezhoud@gmail.com")
+Description: Dosimetry is a Shiny App to visualize and manage interactively Human Badges and Medical profiles.
+Depends:
+Imports:dplyr, shiny, DT (>=1.56), shinyjs
+Suggests: rmarkdown, testthat (>= 0.10.0)
+VignetteBuilder: knitr
+URL: http://kmezhoud.github.io/Dosimetry
+BugReports: https://github.com/kmezhoud/Dosimetry/issues
+License: AGPL-3 | file LICENSE
+LazyData: true
+biocViews:GUI
+RoxygenNote: 5.0.1
