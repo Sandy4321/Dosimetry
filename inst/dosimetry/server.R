@@ -1,8 +1,31 @@
 shinyServer(function(input, output, session) {
 
+  ## source shared functions
+  source("init.R", encoding = "UTF-8", local = TRUE)
+  source("global.R", encoding = "UTF-8", local = TRUE)
+  source("All_ui.R", encoding = "UTF-8", local = TRUE)
+  source("perso_ui.R", encoding = "UTF-8", local = TRUE)
+  source("Edit_ui.R", encoding = "UTF-8", local = TRUE)
   
-  source("inst/global.R", encoding = "UTF-8", local = TRUE)
-  source("R/helper.R", encoding = "UTF-8", local = TRUE)
+  ## source for Documents
+ # source(file.path(r_path,"inst/global.R"), encoding = "UTF-8", local = TRUE)
+  #        
+  # for (file in list.files(paste0(r_path,"inst", sep=""),
+  #                         pattern="\\.(r|R)$",
+  #                         full.names = TRUE)) {
+  #   
+  #   source(file, encoding = "UTF-8", local = TRUE)
+  # }
+  #   
+  for (file in list.files(paste0(system.file(
+    package = "Dosimetry"),
+    "/R",sep=""),
+    pattern="\\.(r|R)$",
+    full.names = TRUE)) {
+
+    source(file, encoding = "UTF-8", local = TRUE)
+  }
+ # source(file.path(r_path,"/R/helper.R"), encoding = "UTF-8", local = TRUE)
   
     # disable sumit button if Mandatory fields are not filled
   observe({

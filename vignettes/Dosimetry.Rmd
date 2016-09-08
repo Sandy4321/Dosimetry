@@ -1,0 +1,24 @@
+---
+title: "Dosimetry data manager"
+author: "\\
+	Karim Mezhoud (<kmezhoud@gmail.com>)\\
+        Nuclear Science Center of Tunisia, Nuclear Safety & Security Department"
+date: "`r Sys.Date()`"
+output: 
+  BiocStyle::html_document:
+    toc: true
+  BiocStyle::pdf_document:
+    toc: true
+vignette: >
+  %\VignetteIndexEntry{Dosimetry: Dosimetry Data Managner}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r style, echo=FALSE, results="asis", message=FALSE}
+BiocStyle::markdown()
+knitr::opts_chunk$set(tidy = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+```

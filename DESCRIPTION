@@ -5,8 +5,8 @@ Date: 2016-05-18
 Authors@R: person("Karim", "Mezhoud", role=c("aut", "cre"), email="kmezhoud@gmail.com")
 Description: Dosimetry is a Shiny App to visualize and manage interactively Human Badges and Medical profiles.
 Depends:
-Imports:dplyr, shiny, DT , shinyjs
-Suggests: rmarkdown, testthat (>= 0.10.0)
+Imports:dplyr, shiny, DT (>= 0.1.55) , shinyjs
+Suggests: rmarkdown, testthat (>= 0.10.0), knitr (>= 1.8)
 VignetteBuilder: knitr
 URL: http://kmezhoud.github.io/Dosimetry
 BugReports: https://github.com/kmezhoud/Dosimetry/issues
